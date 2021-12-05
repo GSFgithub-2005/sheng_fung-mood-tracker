@@ -16,8 +16,8 @@ async function loginUser() {
    	 <h5 class="card-title">Welcome</h5>
    	 <p class="card-text text-muted">Please log-in to continue...</p>
    	 <form on:submit|preventDefault={loginUser} class="form-floating" >
-   		 <input class="form-control" type="email" bind:value={email}/>
-   		 <label for="floatingInput">Email address</label>
+   		 <input  id="email"  bind:value={email} type="email" class="form-control"/>
+   		 <label for="email">Email address</label>
    		 <button type="submit" class="btn btn-dark mt-3">Magic</button>
    	 </form>
     </div>
